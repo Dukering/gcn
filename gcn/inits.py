@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
-
+#产生minval--maxval之间的均匀分布
 def uniform(shape, scale=0.05, name=None):
     """Uniform init."""
     initial = tf.random_uniform(shape, minval=-scale, maxval=scale, dtype=tf.float32)
